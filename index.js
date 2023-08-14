@@ -21,7 +21,23 @@ function age() {
   var month = month2 - month1;
   var year = year2 - year1;
 
-  document.getElementById("ageYresult").innerHTML = year;
-  document.getElementById("ageMresult").innerHTML = month;
-  document.getElementById("ageDresult").innerHTML = day;
+  if (day1 == null || day1 == "") {
+    document.getElementById("message").innerHTML = "field required";
+    return false;
+  } else {
+    document.getElementById("ageYresult").innerHTML = year;
+  }
+  if (month1 == null || month1 == "") {
+    document.getElementById("message").innerHTML = "field required";
+    return false;
+  } else {
+    document.getElementById("ageMresult").innerHTML = month;
+  }
+
+  if (year1 == null || year1 == "") {
+    document.getElementById("message").innerHTML = "field required";
+    return false;
+  } else {
+    document.getElementById("ageDresult").innerHTML = day;
+  }
 }

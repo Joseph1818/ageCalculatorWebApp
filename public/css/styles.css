@@ -52,6 +52,7 @@ body {
 .block {
   position: relative;
   width: 135px;
+  height: 135px;
   margin-left: 20px;
   display: inline-block;
   font-family: Poppins-Regular;
@@ -74,7 +75,7 @@ input[type="text"] {
   outline: none;
 }
 input[type="text"]:focus {
-  background-color:#f0e6ff;
+  background-color: #f0e6ff;
 }
 
 .icon {
@@ -108,4 +109,9 @@ input[type="text"]:focus {
   font-size: 70px;
   left: 50px;
   font-family: Poppins-ExtraBoldItalic;
+}
+
+.errorMessageDay  {
+  color: red;
+  size: small;
 }
