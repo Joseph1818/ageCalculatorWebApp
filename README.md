@@ -1,5 +1,5 @@
 # ageCalculatorWebApp
-AppCalculator app. 
+AppCalculator app ( Html,Css, JavaScript)
 - Step 1: Users are required to input their birthday day, month and year.
 - Step 2: The app check if the input field is not empty in case it is, there is an error message popping out " telling the user that the field
   can't be left empty".
