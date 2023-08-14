@@ -1,27 +1,27 @@
 function age() {
-  var d1 = document.getElementById("date").value;
-  var m1 = document.getElementById("month").value;
-  var y1 = document.getElementById("year").value;
+  var day1 = document.getElementById("date").value;
+  var month1 = document.getElementById("month").value;
+  var year1 = document.getElementById("year").value;
 
   var date = new Date();
-  var d2 = date.getDate();
-  var m2 = 1 + date.getMonth();
-  var y2 = date.getFullYear();
+  var day2 = date.getDate();
+  var month2 = 1 + date.getMonth();
+  var year2 = date.getFullYear();
   var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  if (d1 > d2) {
-    d2 = d2 + month[m2 - 1];
-    m2 = m2 - 1;
+  if (day1 > day2) {
+    day2 = day2 + month[month2 - 1];
+    month2 = month2 - 1;
   }
-  if (m1 > m2) {
-    m2 = m2 + 12;
-    y2 = y2 - 1;
+  if (month1 > month2) {
+    month2 = month2 + 12;
+    year2 = year2 - 1;
   }
-  var d = d2 - d1;
-  var m = m2 - m1;
-  var y = y2 - y1;
+  var day = day2 - day1;
+  var month = month2 - month1;
+  var year = year2 - year1;
 
-  document.getElementById("ageYresult").innerHTML = y;
-  document.getElementById("ageMresult").innerHTML = m;
-  document.getElementById("ageDresult").innerHTML = d;
+  document.getElementById("ageYresult").innerHTML = year;
+  document.getElementById("ageMresult").innerHTML = month;
+  document.getElementById("ageDresult").innerHTML = day;
 }
